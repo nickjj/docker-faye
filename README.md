@@ -57,3 +57,16 @@ faye:
   environment:
     FAYE_PUSH_TOKEN: 25087a8154b2b4b859362a2442bcf8a8bc0fc53b70fb3dfe57e67928d9aad8608cecabea58999bdd4fa5094b4c9032b7255d7ceb7aee6c29fbbdab43a33bf8f0
   ```
+
+### Trying to troubleshoot your server?
+
+Try running the curl command below, you should get a success response if it works.
+
+Keep in mind if you changed the host location, mount endpoint or push token then
+you will need to adjust the curl command below.
+
+```
+curl -X POST http://localhost:4242/stream \
+    -H 'Content-Type: application/json' \
+    -d '{"channel": "/foo", "data": "Hello", "ext": {"pushToken": "25087a8154b2b4b859362a2442bcf8a8bc0fc53b70fb3dfe57e67928d9aad8608cecabea58999bdd4fa5094b4c9032b7255d7ceb7aee6c29fbbdab43a33bf8f0"}}'
+```
