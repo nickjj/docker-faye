@@ -1,0 +1,16 @@
+{
+  "name": "docker-faye",
+  "version": "0.1.0",
+  "description": "A secure Faye server with a Redis backend.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Nick Janetakis <nick.janetakis@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "faye": "^1.1.1",
+    "faye-redis": "^0.2.0"
+  }
+}
