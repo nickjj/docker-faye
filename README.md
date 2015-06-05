@@ -1,3 +1,5 @@
+![Docker pulls](https://img.shields.io/docker/pulls/nickjj/faye.svg?style=flat)
+
 ### What is docker-faye?
 
 Run a node.js Faye server to handle real time push notifications. At the moment
