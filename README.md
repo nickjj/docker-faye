@@ -1,4 +1,4 @@
-![Docker pulls](https://img.shields.io/docker/pulls/nickjj/faye.svg?style=flat)
+[![Docker Repository on Quay.io](https://quay.io/repository/nickjj/faye/status "Docker Repository on Quay.io")](https://quay.io/repository/nickjj/faye)
 
 ### What is docker-faye?
 
@@ -49,7 +49,7 @@ redis:
 # I left in a dummy FAYE_PUSH_TOKEN to give you an idea of how secure the token
 # should be. DO NOT USE THIS TOKEN, GENERATE YOUR OWN!
 faye:
-  image: nickjj/faye
+  image: quay.io/nickjj/faye
   links:
     - redis
   ports:
